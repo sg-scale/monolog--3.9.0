@@ -43,7 +43,7 @@ jobs:
             composer-options: "--ignore-platform-req=php+"
 
     steps:
-      - uses: "actions/checkout@v4"
+      - uses: "actions/checkout@v7"
 
       - name: Run CouchDB
         timeout-minutes: 3
@@ -111,7 +111,7 @@ jobs:
           - "7.17.0"
 
     steps:
-      - uses: "actions/checkout@v4"
+      - uses: "actions/checkout@v7"
 
       # required for elasticsearch
       - name: Configure sysctl limits
@@ -180,7 +180,7 @@ jobs:
           - "8.2.0"
 
     steps:
-      - uses: "actions/checkout@v4"
+      - uses: "actions/checkout@v7"
 
       # required for elasticsearch
       - name: Configure sysctl limits
